@@ -4,10 +4,13 @@ public class Test {
 		Point p2 = new Point(p1);
 		Point p3 = new Point(0, 0);
 		Point p4 = new Point(1, 1);
+		Point p5 = new Point(1, 1);
 
 		System.out.println(p1.getX() + ", " + p1.getY());
 		System.out.println(p2.getX() + ", " + p2.getY());
 		System.out.println(p1.distanceTo(p3));
 		System.out.println(p3.distanceTo(p4));
+		System.out.println(p3.equals(p4));
+		System.out.println(p4.equals(p5));
 	}	
 }
