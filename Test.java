@@ -36,5 +36,11 @@ public class Test {
 		//toString()
 		System.out.println(t1.toString());
 		System.out.println(t2.toString());
+
+		//setVertex()
+		t1.setVertex(0, p1);
+		t2.setVertex(0, p4);
+		System.out.println(t1.toString());
+		System.out.println(t2.toString());
 	}	
 }

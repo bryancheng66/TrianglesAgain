@@ -48,4 +48,15 @@ public class Triangle {
 			"v2(" + this.v2.getX() + ", " + this.v2.getY() + ") " +
 			"v3(" + this.v3.getX() + ", " + this.v3.getY() + ")";
 	} 
-}
+
+	public void setVertex(int index, Point newP){
+		switch (index) {
+			case 0: v1 = newP;
+				break;
+			case 1: v2 = newP;
+				break;
+			case 2: v3 = newP;
+				break;	
+		}
+	}
+}	
