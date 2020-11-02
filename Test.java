@@ -32,5 +32,9 @@ public class Test {
 		//classify()
 		System.out.println(t1.classify());
 		System.out.println(t2.classify());
+
+		//toString()
+		System.out.println(t1.toString());
+		System.out.println(t2.toString());
 	}	
 }
