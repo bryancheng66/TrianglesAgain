@@ -19,10 +19,14 @@ public class Triangle {
 
 	public double getArea(){
 		return Math.sqrt(
-			this.getPerimeter() * 
-			(this.getPerimeter() - this.v1.distanceTo(v2)) * 
-			(this.getPerimeter() - this.v2.distanceTo(v3)) * 
-			(this.getPerimeter() - this.v3.distanceTo(v1))
+			(this.getPerimeter() / 2) * 
+			(this.getPerimeter() / 2 - this.v1.distanceTo(v2)) * 
+			(this.getPerimeter() / 2 - this.v2.distanceTo(v3)) * 
+			(this.getPerimeter() / 2 - this.v3.distanceTo(v1))
 		);
 	}
+
+	//public String classify(){
+	
+	//}
 }
