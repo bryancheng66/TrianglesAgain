@@ -24,5 +24,9 @@ public class Test {
 		//getPerimeter()
 		System.out.println(t1.getPerimeter());
 		System.out.println(t2.getPerimeter());
+
+		//getArea()
+		System.out.println(t1.getArea());
+		System.out.println(t2.getArea());
 	}	
 }

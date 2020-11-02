@@ -16,4 +16,13 @@ public class Triangle {
 	public double getPerimeter(){
 		return v1.distanceTo(v2) + v2.distanceTo(v3) + v3.distanceTo(v1);
 	}
+
+	public double getArea(){
+		return Math.sqrt(
+			this.getPerimeter() * 
+			(this.getPerimeter() - this.v1.distanceTo(v2)) * 
+			(this.getPerimeter() - this.v2.distanceTo(v3)) * 
+			(this.getPerimeter() - this.v3.distanceTo(v1))
+		);
+	}
 }
