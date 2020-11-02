@@ -20,13 +20,26 @@ public class Triangle {
 	public double getArea(){
 		return Math.sqrt(
 			(this.getPerimeter() / 2) * 
-			(this.getPerimeter() / 2 - this.v1.distanceTo(v2)) * 
-			(this.getPerimeter() / 2 - this.v2.distanceTo(v3)) * 
-			(this.getPerimeter() / 2 - this.v3.distanceTo(v1))
+			(this.getPerimeter() / 2 - this.v1.distanceTo(this.v2)) * 
+			(this.getPerimeter() / 2 - this.v2.distanceTo(this.v3)) * 
+			(this.getPerimeter() / 2 - this.v3.distanceTo(this.v1))
 		);
 	}
 
-	//public String classify(){
-	
-	//}
+	public String classify(){
+		if ( 
+			Math.round(this.v1.distanceTo(this.v2) * 10000) == Math.round(this.v2.distanceTo(this.v3) * 10000)  && 
+			Math.round(this.v2.distanceTo(this.v3) * 10000) == Math.round(this.v3.distanceTo(this.v1) * 10000)  
+		) {
+			return "equilateral";	
+		} else if (
+			Math.round(this.v1.distanceTo(this.v2) * 10000) == Math.round(this.v2.distanceTo(this.v3) * 10000) || 
+			Math.round(this.v2.distanceTo(this.v3) * 10000) == Math.round(this.v3.distanceTo(this.v1) * 10000) ||
+			Math.round(this.v3.distanceTo(this.v1) * 10000) == Math.round(this.v1.distanceTo(this.v2) * 10000) 
+		) {
+			return "isosceles";
+		} else {
+			return "scalene";
+		}
+	}
 }

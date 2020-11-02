@@ -2,21 +2,21 @@ public class Point {
 	private double x, y;
 
 	public Point(double X, double Y){
-		x = X;
-		y = Y;
+		this.x = X;
+		this.y = Y;
 	}
 
 	public Point(Point p){
-		x = p.x;
-		y = p.y;
+		this.x = p.x;
+		this.y = p.y;
 	}
 	
 	public double getX(){
-		return x;	
+		return this.x;	
 	}
 
 	public double getY(){
-		return y;
+		return this.y;
 	}	
 
 	public double distanceTo(Point other){

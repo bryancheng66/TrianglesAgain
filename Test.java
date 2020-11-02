@@ -28,5 +28,9 @@ public class Test {
 		//getArea()
 		System.out.println(t1.getArea());
 		System.out.println(t2.getArea());
+		
+		//classify()
+		System.out.println(t1.classify());
+		System.out.println(t2.classify());
 	}	
 }
